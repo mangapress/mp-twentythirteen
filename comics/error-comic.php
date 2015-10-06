@@ -14,6 +14,6 @@
     </header><!-- .entry-header -->
 
     <div class="entry-content">
-        <p><?php _e('No comic found.', 'mangapress'); ?></p>
+        <p><?php _e('No comic found.', 'mp-twentythirteen'); ?></p>
     </div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -21,7 +21,7 @@ get_header();
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                         <div class="entry-meta">
                                 <?php twentythirteen_entry_meta(); ?>
-                                <?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+                                <?php edit_post_link( __( 'Edit', 'mp-twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
                         </div><!-- .entry-meta -->
                     </header><!-- .entry-header -->
 
@@ -37,12 +37,12 @@ get_header();
                         <?php the_post_thumbnail(get_the_ID(), array('class' => 'mangapress-comic-img')); ?>
                         </p>
                         <?php the_content(); ?>
-                        <?php wp_link_pages(array('before' => '<div class="page-links">' . __('Pages:', 'twentytwelve'), 'after' => '</div>')); ?>
+                        <?php wp_link_pages(array('before' => '<div class="page-links">' . __('Pages:', 'mp-twentythirteen'), 'after' => '</div>')); ?>
                     </div><!-- .entry-content -->
                     <footer class="entry-meta">
                     <?php if ( comments_open() && ! is_single() ) : ?>
                         <div class="comments-link">
-                                <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'twentythirteen' ) . '</span>', __( 'One comment so far', 'twentythirteen' ), __( 'View all % comments', 'twentythirteen' ) ); ?>
+                                <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'mp-twentythirteen' ) . '</span>', __( 'One comment so far', 'mp-twentythirteen' ), __( 'View all % comments', 'mp-twentythirteen' ) ); ?>
                         </div><!-- .comments-link -->
                     <?php endif; // comments_open() ?>
 
